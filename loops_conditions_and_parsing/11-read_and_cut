@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #jskdljf
-while IFS=":" read -r username _ uid _ _ home _
+while read -r line
 do
-    echo "User: $username, UID: $uid, Home: $home"
+    echo "$line" | cut -d: -f1,3,6
 done < /etc/passwd
+
