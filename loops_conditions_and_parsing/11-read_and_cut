@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#jskdljf
+while IFS=":" read -r username _ uid _ _ home _
+do
+    echo "User: $username, UID: $uid, Home: $home"
+done < /etc/passwd
