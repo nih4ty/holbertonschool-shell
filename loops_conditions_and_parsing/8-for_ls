@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#hd
+for file in *; do
+  echo "${file#*-}"
+done
