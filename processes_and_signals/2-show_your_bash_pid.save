@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#bhjdskv
+ps aux | grep bash
+
